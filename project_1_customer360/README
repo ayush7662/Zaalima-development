@@ -1,5 +1,23 @@
 
-<h1 align="center">📊 Retail Customer Behavior & RFM Analysis </h1
+📊 Retail Customer Behavior & RFM Analysis 
+
+
+🚀 Project Overview
+
+This project analyzes retail customer purchasing behavior using the RFM (Recency, Frequency, Monetary) framework to segment customers based on their engagement and spending patterns.
+
+The objective is to help businesses identify:
+
+High-value customers
+
+Loyal customers
+
+Customers at risk of churn
+
+Inactive customers
+
+The project is implemented using PySpark (Big Data Processing) and visualized using Power BI Dashboard.
+
 
 
 
