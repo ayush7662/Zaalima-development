@@ -1,22 +1,135 @@
 
 📊 Retail Customer Behavior & RFM Analysis 
 
-
 🚀 Project Overview
-
 This project analyzes retail customer purchasing behavior using the RFM (Recency, Frequency, Monetary) framework to segment customers based on their engagement and spending patterns.
-
 The objective is to help businesses identify:
-
 High-value customers
-
 Loyal customers
-
 Customers at risk of churn
-
 Inactive customers
+The project is implemented using PySpark (Big Data Processing) and visualized using Power BI Dashboard
 
-The project is implemented using PySpark (Big Data Processing) and visualized using Power BI Dashboard.
+
+🎯 Business Objective
+
+In retail and e-commerce businesses, understanding customer behavior is critical for:
+Improving customer retention
+Increasing revenue
+Reducing churn
+Running targeted marketing campaigns
+RFM analysis helps convert raw transactional data into actionable business insights.
+
+
+
+🛠️ Tech Stack
+
+PySpark
+Spark SQL
+Pandas
+Power BI
+Retail Transaction Dataset (CSV)
+
+
+📂 Project Workflow
+
+1️⃣ Data Cleaning
+Filtered dataset to remove:
+Negative Quantity (returns)
+Invalid Unit Price
+Null Customer IDs
+
+
+2️⃣ Feature Engineering
+
+Created Total Revenue column:
+Quantity * UnitPrice AS Total_Amount
+
+
+3️⃣ RFM Calculation
+
+Using Spark SQL:
+Recency → Days since last purchase
+Frequency → Number of transactions
+Monetary → Total amount spent
+
+
+4️⃣ RFM Scoring (Window Functions)
+
+Each customer receives a score from 1–5 for each metric.
+
+5️⃣ Customer Segmentation Logic
+
+
+📊 Dashboard Insights
+🔹 Total Customers: 4,338
+🔹 Key Findings:
+
+Champions → Highest revenue & most frequent buyers
+Loyal Customers → Consistent repeat buyers
+At Risk → High past engagement but declining activity
+Hibernating → Low activity & low spenders
+
+The dashboard provides:
+Average Spending by Segment
+Average Purchase Frequency by Segment
+Customer Distribution Pie Chart
+Total Customer Count KPI
+
+
+
+📈 Business Impact
+
+This segmentation enables businesses to:
+Offer premium loyalty programs to Champions
+Send retention campaigns to At-Risk customers
+Run reactivation campaigns for Hibernating customers
+Optimize marketing ROI
+Improve revenue forecasting
+
+
+
+📁 Output
+
+Generated file:
+rfm_customer_segments.csv
+
+Columns include:
+
+CustomerID
+Recency
+Frequency
+Monetary
+R_Score
+F_Score
+M_Score
+Customer_Segment
+
+
+🔮 Future Enhancements
+
+Add churn prediction model
+Deploy interactive Streamlit dashboard
+Integrate real-time data pipeline
+Automate monthly segmentation
+
+
+
+👨‍💻 Author
+
+Ayush Raj
+Susmita Labbe
+Gundarpi S Namratha
+GOBIKA G
+
+
+
+
+
+
+
+
+
 
 
 
