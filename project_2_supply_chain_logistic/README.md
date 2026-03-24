@@ -1,5 +1,5 @@
 
-📦 Supply Chain Analytics using PySpark
+
 <p align="center"> <b>🚀 Big Data Analytics Project | PySpark | SQL | Insights</b> </p>
 🚀 Overview
 
