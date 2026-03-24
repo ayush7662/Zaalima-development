@@ -1,81 +1,70 @@
+
 📦 Supply Chain Analytics using PySpark
+<p align="center"> <b>🚀 Big Data Analytics Project | PySpark | SQL | Insights</b> </p>
 🚀 Overview
 
-This project analyzes supply chain data using PySpark to extract insights on delivery performance, delays, sales, and profitability. It demonstrates scalable big data processing and SQL-based analytics.
+This project analyzes large-scale supply chain data using PySpark to extract meaningful insights on:
+
+Delivery performance 🚚
+Shipping delays ⏱️
+Sales & profitability 💰
+Demand trends 📈
+
+It demonstrates how big data tools can be used for real-world business decision-making.
 
 🎯 Key Features
-Big data processing using PySpark
-SQL-based analytics
-Delivery delay analysis
-Late delivery risk evaluation
-Category-wise sales and profit analysis
-Demand trend analysis
+
+✨ Clean and scalable data processing using PySpark
+📊 SQL-based analytics on large datasets
+🚚 Delivery performance tracking
+⚠️ Late delivery risk detection
+💰 Category-wise sales & profit analysis
+📈 Demand trend visualization
+
+
 🛠️ Tech Stack
-Python
-PySpark (Apache Spark)
-Spark SQL
-Pandas
+
+| Technology  | Usage               |
+| ----------- | ------------------- |
+| Python 🐍   | Programming         |
+| PySpark 🔥  | Big Data Processing |
+| Spark SQL ⚡ | Data Analysis       |
+| Pandas 📊   | Export & Handling   |
+
+
 📂 Dataset
 
-File used: DataCoSupplyChainDataset.csv
+File: DataCoSupplyChainDataset.csv
 
 Includes:
 
-Shipping details
-Customer data
-Sales and profit
+Shipping data
+Customer details
+Sales & profit
 Delivery status
 ⚙️ Workflow
-1. Initialize Spark Session
-from pyspark.sql import SparkSession
+Load Data → Clean Data → Select Features → Run SQL Queries → Generate Insights → Export CSV
+📊 Analysis
+🔹 Delay Analysis
 
-spark = SparkSession.builder \
-    .appName("SupplyChain_BigData_Analytics") \
-    .getOrCreate()
-2. Load Dataset
-supply = spark.read.csv(
-    "DataCoSupplyChainDataset.csv",
-    header=True,
-    inferSchema=True
-)
-3. Data Cleaning
-Selected important columns
-Renamed columns for clarity
-📊 Analysis Performed
-Delay Analysis
+Compare actual vs scheduled shipping time
 
-Difference between actual and scheduled shipping days
+🔹 Delivery Performance
 
-Delivery Performance
+Count orders based on delivery status
 
-Order count by delivery status
+🔹 Late Delivery Risk
 
-Late Delivery Risk
+Identify risky deliveries
 
-Identify risk-prone deliveries
+🔹 Category Analysis
+Sales 💰
+Profit 📊
+🔹 Demand Trend
 
-Category Sales & Profit
-
-Analyze business performance
-
-Demand Trend
-
-Daily sales trends
+Daily sales pattern analysis
 
 📁 Output Files
-category_sales_summary.csv
-delivery_performance_summary.csv
-demand_trend_summary.csv
-💡 Key Insights
-Delivery delays impact performance
-High-performing categories identified
-Risk detection improves planning
-Trends help in forecasting
-🔮 Future Improvements
-Add machine learning models
-Build dashboards (Power BI / Tableau)
-Real-time analytics
-Customer segmentation
-👨‍💻 Author
-
-Ayush Raj
+📄 category_sales_summary.csv
+📄 delivery_performance_summary.csv
+📄 demand_trend_summary.csv
